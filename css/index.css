@@ -36,8 +36,8 @@ li { list-style: none; }
 .mainmenu > li ul {
     position: absolute;
     bottom: -140px;
-    opacity: 1;
-    display: none;
+    opacity: 0;
+    /* display: none; */
     background-color: #666;
     font-weight: 100;
     font-size: 15px;   
@@ -47,18 +47,19 @@ li { list-style: none; }
     line-height: 25px;
     z-index: 2;
 }
-/* .mainmenu > li:hover ul {
+.mainmenu > li:hover ul {
     opacity: 1;
-} */
+}
 .mainmenu ul li:hover {
     border-bottom: 1px solid orangered;
 }
 .container {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin: 0 auto;
     clear: both;
     padding: 40px;
     width: 1400px;
+    position: relative;
 }
 .container article {
     width: 1270px;
@@ -171,6 +172,7 @@ li { list-style: none; }
 .side_art dl {
     width: 330px;
     margin: 0 auto;
+    text-align: center;
 }
 .side_art img {
     width: 330px;
@@ -178,10 +180,12 @@ li { list-style: none; }
 }
 dt {
     font-weight: bold;
+    padding: 10px 0;
 }
 dd {
     line-height: 20px;
     font-size: 14px;
+    padding: 10px 10px;
 }
 .side_art button {
     width: 300px;
@@ -189,7 +193,7 @@ dd {
     border: 2px solid royalblue;
     background-color: #222;
     color: #fff;
-    margin: 20px;
+    margin: 10px 10px 30px 10px;
     cursor: pointer;
     outline: 0;
 }
@@ -198,6 +202,10 @@ dd {
     margin: 0;
     padding: 10px;
     list-style-type: none;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
 }
 #pagination a {
     display: inline-block;
@@ -205,13 +213,52 @@ dd {
     height: 30px;
     border-radius: 100%;
     padding: 0;
-    margin: auto 5px;
+    margin: auto 10px;
     text-align: center;
     position: relative;
-    background-color: rgba(46, 204, 113, 0.4);
+    background-color: rgba(290, 170, 170, 0.4);
 }
 #pagination .selected {
-    background-color: #2ecc71;
+    background-color: #c48b7c;
+}
+#view {
+    width: 1400px;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+#view h2 {
+    padding: 0px 105px 20px;
+    display: inline-block;
+    color: gainsboro;
+}
+.buttons {
+    position: absolute;
+    top: 105px;
+    left: 160px;
+}
+.buttons li {
+    display: flex;
+    float: left;
+    width: 270px;
+    margin-right: 35px;
+}
+.buttons button {
+    padding: 5px 10px;
+    color: #fff;
+    background: #000;
+    border: 2px solid #000;
+    outline: 0;
+    font-size: 11px;
+}
+.viewimgs {
+    width: 1217px;
+    margin: 0 auto;
+}
+.viewimgs img {
+    width: 270px;
+    height: 200px;
+    margin: 0 15px;
 }
 .footer {
     border: 1px solid gray;
