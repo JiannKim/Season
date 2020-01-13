@@ -64,6 +64,7 @@ li { list-style: none; }
 .container article {
     width: 1270px;
     margin: 0 auto;
+    position: relative;
 }
  .mimg img {
     width: 400px;
@@ -123,12 +124,12 @@ li { list-style: none; }
     position: relative;
 }
 .contents img {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 550px;
 }
 .contents li {
     /* border: 1px solid green; */
-    width: 700px;
+    width: 800px;
     height: 550px;
     position: relative;
     padding-bottom: 50px;
@@ -136,12 +137,12 @@ li { list-style: none; }
 #art {
     position: absolute;
     background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0) -30%, rgba(255, 255, 255, 0.7) 100%);
-    width: 500px;
+    width: 560px;
     height: 140px;
     color: #fff;
-    top: 300px;
+    top: 350px;
     left: 20px;
-    padding: 15px;
+    padding: 20px;
     line-height: 25px;
 }
 #art p {
@@ -165,11 +166,11 @@ li { list-style: none; }
 }
 .side_art {
     width: 500px;
-    position: relative;
-    left: 100px;
     color: #fff;
 }
 .side_art dl {
+    position: absolute;
+    right: 0;
     width: 330px;
     margin: 0 auto;
     text-align: center;
@@ -178,11 +179,11 @@ li { list-style: none; }
     width: 330px;
     height: 220px;
 }
-dt {
+.side_art dt {
     font-weight: bold;
     padding: 10px 0;
 }
-dd {
+.side_art dd {
     line-height: 20px;
     font-size: 14px;
     padding: 10px 10px;
@@ -204,7 +205,7 @@ dd {
     list-style-type: none;
     display: flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     left: 100px;
 }
 #pagination a {
@@ -228,20 +229,25 @@ dd {
     position: relative;
 }
 #view h2 {
-    padding: 0px 105px 20px;
+    padding: 0px 70px 20px;
     display: inline-block;
     color: gainsboro;
 }
 .buttons {
     position: absolute;
-    top: 105px;
-    left: 160px;
+    top: 110px;
+    left: 130px;
+}
+.buttons button:hover {
+    color: #000;
+    background-color: lightgray;
+    border: 1px solid lightgray;
 }
 .buttons li {
     display: flex;
     float: left;
     width: 270px;
-    margin-right: 35px;
+    margin-right: 60px;
 }
 .buttons button {
     padding: 5px 10px;
@@ -250,16 +256,39 @@ dd {
     border: 2px solid #000;
     outline: 0;
     font-size: 11px;
+    cursor: pointer;
 }
 .viewimgs {
-    width: 1217px;
+    width: 1321px;
     margin: 0 auto;
 }
-.viewimgs img {
+.viewlist img {
     width: 270px;
     height: 200px;
-    margin: 0 15px;
+    margin-bottom: 15px;
 }
+.viewlist {
+    width: 1500px;
+}
+.viewlist > li {
+    width: 270px;
+    float: left;
+    padding: 0 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.viewlist a {
+    color: #fff;
+    width: 200px;
+}
+
 .footer {
+    clear: both;
     border: 1px solid gray;
+    padding: 20px;
+}
+#bottom {
+    width: 1400px;
+    margin: 0 auto;
+    border: 1px solid pink;
 }
