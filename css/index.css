@@ -280,6 +280,7 @@ li { list-style: none; }
 .viewlist a {
     color: #fff;
     width: 200px;
+    border: 1px solid red;
 }
 
 .footer {
