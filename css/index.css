@@ -272,6 +272,7 @@ li { list-style: none; }
 }
 .viewlist > li {
     width: 270px;
+    height: 330px;
     float: left;
     padding: 0 30px;
     font-weight: bold;
@@ -280,16 +281,45 @@ li { list-style: none; }
 .viewlist a {
     color: #fff;
     width: 200px;
-    border: 1px solid red;
 }
 
 .footer {
     clear: both;
     border: 1px solid gray;
-    padding: 20px;
 }
 #bottom {
-    width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px 70px;
+    background-color:#333;
     border: 1px solid pink;
+    position: relative;
+}
+#bottom button {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: rosybrown;
+    border: 3px solid rgb(190, 138, 138);
+    border-style: outset;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.sns > p {
+    width: 200px;
+}
+.sns {
+    display: inline-block;
+    float: left;
+}
+.sns i {
+    padding: 10px 5px;
+}
+.person {
+    display: inline-block;
+    width: 200px;
+}
+.news {
+    width: 200px;
+    display: inline-block;
 }
