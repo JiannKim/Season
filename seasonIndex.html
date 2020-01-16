@@ -5,6 +5,7 @@
         <title>4Season!</title>
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> -->
     </head>
     <body>
         <div id="wrapper">
@@ -126,11 +127,13 @@
                 </article>
                 <div id="pagination">
                     <ul>
+                        <i class="fas fa-chevron-left"></i>
                         <a href=""><li></li></a>
                         <a href=""><li></li></a>
                         <a class="selected" href=""><li></li></a>
                         <a href=""><li></li></a>
                         <a href=""><li></li></a>
+                        <i class="fas fa-chevron-right"></i>
                     </ul>
                 </div> <!-- pagination -->
             </div> <!-- container -->
@@ -180,20 +183,30 @@
                         <h2>Contact Me!</h2>
                         <img src="" alt="">
                         <p class="p name">Kim 자몽</p>
-                        <p><a href="#">jamong@season.com</a></p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:jamong@season.com">jamong@season.com</a>
                         <img src="" alt="">
                         <p class="p name">Uto</p>
-                        <p><a href="#">uton@season.com</a></p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">uton@season.com</a>
                         <img src="" alt="">
                         <p class="p name">IkIk</p>
-                        <p><a href="#">ikonw@season.com</a></p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">ikonw@season.com</a>
                     </div> <!-- person -->
                     <div class="news">
                         <h2>Newsletter</h2>
-                        <input class="inp tex" type="text" placeholder="Your Name">
-                        <input class="inp tex" type="text" placeholder="Your email address">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your email address">
                         <input class="inp but" type="button" value="Subscribe to newsletter">
                     </div> <!-- news -->
+                    <div class="ui search">
+                        <div class="ui icon input">
+                          <input class="prompt" type="text" placeholder="Common passwords...">
+                          <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
+                    </div>
                 </div> <!-- bottom -->
                 <nav class="copy">
                     <address> &copy; 01-07-2020 KIM-Jamong & IkIk</address>
