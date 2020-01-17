@@ -377,3 +377,12 @@ li { list-style: none; }
     right: 308px;
     bottom: 30px;
 }
+
+.copy address {
+    width: 400px;
+    float: left;
+}
+.copy li, span {
+    float: left;
+    margin: 10px;
+}
