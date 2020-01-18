@@ -1,0 +1,100 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+.links{
+	@include clearfix;
+	padding:50px;
+	@include box-sizing(border-box);
+	text-align: center;
+	background: #313131;
+}
+.link-effect-14 {
+	a {
+		color: #797878;
+		margin: 0 20px;
+		padding: 10px 20px;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		@include transition(.3s ease-out);
+		span{
+			&::before{
+				width: 5px;
+				height: 5px;
+				background: transparent;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				border-top: 2px solid white;
+				border-left: 2px solid white;
+				@include transition (.3s);
+				opacity: 0;
+			}
+			&::after{
+				width: 5px;
+				height: 5px;
+				background: transparent;
+				content: "";
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				border-right: 2px solid white;
+				border-bottom: 2px solid white;
+				@include transition (.3s);
+				opacity: 0;
+
+			}
+		}
+		&::before {
+			width: 5px;
+			height: 5px;
+			background: transparent;
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-right: 2px solid white;
+			border-top: 2px solid white;
+			@include transition (.3s);
+			opacity: 0;
+		}
+		&::after {
+			width: 5px;
+			height: 5px;
+			background: transparent;
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			border-left: 2px solid white;
+			border-bottom: 2px solid white;
+			@include transition (.3s);
+			opacity: 0;
+		}
+		&:hover{
+			color: white;
+			&::before{
+				opacity: 1;
+				right: 5px;
+				top: 5px;
+			}
+			&::after{
+				opacity: 1;
+				left: 5px;
+				bottom: 5px;
+			}
+			span{
+				&::before{
+					opacity: 1;
+					left: 5px;
+					top: 5px;
+				}
+				&::after{
+					opacity: 1;
+					right: 5px;
+					bottom: 5px;
+				}
+			}
+		}
+	}
+}
