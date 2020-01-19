@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0;}
-a { text-decoration: none; display: flex;}
 li { list-style: none; }
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 #wrapper {
     /* border: 1px solid red; */
@@ -99,6 +99,61 @@ li { list-style: none; }
     padding: 17px 70px;
 }
 
+.textbox a {
+  font-family: 'Roboto Condensed', sans-serif;
+  /* font-size: 20px;
+  text-decoration: none; */
+}
+
+.textbox {
+  /* *zoom: 1; */
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; */
+  box-sizing: border-box;
+}
+.textbox:before, .textbox:after {
+  content: "";
+  display: table;
+}
+.textbox:after {
+  clear: both;
+}
+/*effect2*/
+/* .mtext {
+  overflow: hidden;
+} */
+/* .mtext a {
+  overflow: hidden;
+  padding: 20px;
+  height: 1em;
+  font-weight: 400;
+} */
+.mtext a span {
+  position: relative;
+  display: inline-block;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+}
+.mtext a span::before {
+  color: #222;
+  position: absolute;
+  top: 30px;
+  content: attr(data-hover);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.mimg:hover span {
+  -moz-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+
 .container {
     /* border: 1px solid yellow; */
     margin: 0 auto;
@@ -116,11 +171,7 @@ li { list-style: none; }
     width: 400px;
     height: 660px;
     border-radius: 20px;
-}
-.mimg img:hover {
     box-shadow: 11px 11px 10px #333;
-    /* transform: all .5s;
-    transform-origin: 0 100%; */
 }
 .mimg {
     float: left;
@@ -153,20 +204,25 @@ li { list-style: none; }
 .textbox {
     background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
     position: absolute;
-    width: 380px;
-    height: 50px;
+    width: 400px;
+    height: 90px;
     line-height: 15px;
     padding: 20px 10px;
 }
+.textbox a {
+    all: unset;
+}
 .mtext {
     top: 580px;
-    height: 40px;
+    height: 80px;
     font-size: 17px;
+    font-weight: 600;
     border-radius: 20px;
+    overflow: hidden;
 }
 .text {
     top: 210px;
-    color: #fff;
+    color: gainsboro;
     font-size: 17px;
 }
 
