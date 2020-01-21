@@ -349,6 +349,7 @@ li { list-style: none; }
 .viewlist a {
     color: #fff;
     width: 200px;
+    text-decoration: none;
 }
 
 .footer {
@@ -397,7 +398,15 @@ li { list-style: none; }
     height: 230px;
     margin: 0 100px;
     position: absolute;
-    left: 570px;
+    left: 670px;
+}
+.person h2 {
+    padding: 0 15px;
+}
+.person section {
+    width: 90px;
+    height: 270px;
+    float: left;
 }
 .person a {
     color: rosybrown;
@@ -405,6 +414,22 @@ li { list-style: none; }
 }
 .person i {
     color: #666;
+}
+.person img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.person dl {    position: absolute;
+    left: 100px;
+    width: 210px;
+    height: 320px;
+    top: 10px;
+}
+.person dt {
+    margin-top: 23px;
+    padding: 17px;
+    width: 180px;
 }
 .news {
     display: inline-block;
